@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Maquinaria Municipal</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        :root {
+            --main1: #23293a;
+            --main2: #2a384d;
+            --main3: #5b6b82;
+            --main4: #d1d5db;
+            --main5: #8999b3;
+            --accent: #fff;
+            --radius: 18px;
+            --header-bg: #f8fafc;
+            --shadow: 0 8px 32px rgba(0,0,0,0.08);
+            --primary-btn: linear-gradient(135deg, #23293a 60%, #5b6b82 100%);
+            --success-btn: linear-gradient(135deg, #2a384d 60%, #5b6b82 100%);
+            --danger-btn: linear-gradient(135deg, #723232 60%, #b35454 100%);
+            --warning-btn: linear-gradient(135deg, #dbb600 60%, #ffe066 100%);
+        }
+        html, body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #23293a 0%, #5b6b82 100%);
+            margin: 0; padding: 0; min-height: 100vh; color: var(--main2);
+        }
+        .header {
+            background: var(--header-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2rem 1rem 1.5rem 1rem;
+            margin: 2rem auto 1rem auto;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .logo-inst {
+            width: 95px;
+            height: 95px;
+            border-radius: 16px;
+            object-fit: cover;
+            box-shadow: 0 2px 12px #0002;
+            border: 4px solid var(--main3);
+            background: #fff;
+        }
+        .title-group {
+            flex: 1;
+        }
+        .main-title {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 2.1rem;
+            color: var(--main1);
+            letter-spacing: 1px;
+            margin-bottom: 0.35rem;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--main3);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .inst-name {
+            color: var(--main5);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 1rem;
+        }
+        nav {
+            margin: 0 auto 2rem auto;
+            max-width: 900px;
+            background: var(--header-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 0.7rem 0.7rem 0.1rem 0.7rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--main3);
+            font-weight: 700;
+            font-size: 1.05rem;
+            padding: 0.7rem 1.4rem;
+            border-radius: 10px 10px 0 0;
+            background: transparent;
+            transition: background 0.18s, color 0.18s;
+            display: flex; align-items: center; gap: 8px;
+        }
+        nav a.active, nav a:hover {
+            background: var(--main1);
+            color: #fff;
+        }
+        .page {
+            display: none;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+            background: var(--header-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2rem 1.5rem 2rem 1.5rem;
+        }
+        .page.active { display:
